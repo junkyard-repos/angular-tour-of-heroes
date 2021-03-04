@@ -1,0 +1,11 @@
+<div [formGroup]="myForm">
+  {{myForm.value | json}}
+  <hr>
+  <input type="text" formControlName="firstName">
+  <input type="text" formControlName="lastName">
+  <input type="text" formControlName="age">
+</div>
+
+<input type="text" [formControl]="controls.firstName">
+
+<button [disabled]="myForm.invalid">Hello</button>
